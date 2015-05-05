@@ -36,6 +36,8 @@ $ edp webserver start
 
 打开 `http://127.0.01:8848/output/` 看效果
 
+![showcase](screenshot/showcase.png)
+
 ## Related
 
 - [edp](https://github.com/ecomfe/edp)
