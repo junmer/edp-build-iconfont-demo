@@ -1,0 +1,31 @@
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+#main {
+    margin: 2em;
+}
+.icon-list {
+    overflow: hidden
+}
+.icon-list li {
+    float: left;
+    width: 100px;
+    height: 150px;
+    list-style: none;
+    text-align: center
+}
+.icon-list .icon {
+    font-size: 42px;
+    line-height: 100px;
+    margin: 10px 0;
+    color: #333;
+    font-style: normal;
+    -webkit-transition: font-size .25s ease-out 0s;
+    -moz-transition: font-size .25s ease-out 0s;
+    transition: font-size .25s ease-out 0s
+}
+.icon-list .icon:hover {
+    font-size: 100px
+}

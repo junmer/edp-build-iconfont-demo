@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>edp build iconfont demo</title>
+    <script src="src/js/tmpl.js"></script>
+    <link rel="stylesheet" href="src/font/icon-food.css">
+    <link rel="stylesheet" href="src/css/demo.css">
+</head>
+
+<body>
+
+<div id="main"></div>
+
+<script id="tpl" type="text/html">
+<h1>
+    icon food
+</h1>
+<ul class="icon-list">
+    <% for ( var i = 0; i < clz.length; i++ ) { %>
+    <li>
+        <i class="icon icon-<%=clz[i]%>"></i>
+        <div class="name"><%=clz[i]%></div>
+    </li>
+    <% } %>
+</ul>
+
+</script>
+
+<script>
+
+var clz = [
+    'beizi',
+    'hanbao',
+    'lengyin',
+    'regou',
+    'shousi',
+    'tanghulu',
+    'tiantianquan'
+]
+
+var output = tmpl(document.getElementById('tpl').innerHTML, {clz: clz});
+
+document.getElementById('main').innerHTML = output;
+
+</script>
+
+</body>
+</html>
