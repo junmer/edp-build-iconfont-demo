@@ -16,7 +16,7 @@ exports.getProcessors = function () {
     var pathMapperProcessor = new PathMapper();
     var addCopyright = new AddCopyright();
     var iconProcessor = new IconProcessor({
-        files: [ 'src/svg/*.svg' ],
+        files: 'src/svg/*.svg',
         fontName: 'icon-food',
         dest: 'asset/font'
     });

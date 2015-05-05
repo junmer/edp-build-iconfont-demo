@@ -22,9 +22,9 @@ $ edp build -f
 ```
 var FontProcessor = require('edp-build-iconfont');
 var iconProcessor = new IconProcessor({
-    files: [ 'src/svg/*.svg' ],		// svg 文件
-    fontName: 'icon-food',			// 字体名
-    dest: 'asset/font'				// 目标路径
+    files: 'src/svg/*.svg',         // svg 文件
+    fontName: 'icon-food',          // 字体名
+    dest: 'asset/font'              // 目标路径
 });
 ```
 
