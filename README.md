@@ -13,14 +13,14 @@ $ npm install -g edp
 ```
 $ git clone https://github.com/junmer/edp-build-iconfont-demo
 $ cd edp-build-iconfont-demo
-$ npm install
+$ npm install edp-build-iconfont --save-dev
 $ edp build -f
 ```
 
 ## Config
 
 ```
-var FontProcessor = require('edp-build-iconfont');
+var IconProcessor = require('edp-build-iconfont');
 var iconProcessor = new IconProcessor({
     files: 'src/svg/*.svg',         // svg 文件
     fontName: 'icon-food',          // 字体名
@@ -41,7 +41,7 @@ $ edp webserver start
 ## Related
 
 - [edp](https://github.com/ecomfe/edp)
-- [fontmin](https://github.com/junmer/fontmin)
+- [fontmin](https://github.com/ecomfe/fontmin)
 - [edp-build-iconfont](https://github.com/junmer/edp-build-iconfont)
 - [fonteditor](https://github.com/ecomfe/fonteditor)
 
