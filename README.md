@@ -14,6 +14,7 @@ $ npm install -g edp
 $ git clone https://github.com/junmer/edp-build-iconfont-demo
 $ cd edp-build-iconfont-demo
 $ npm install edp-build-iconfont --save-dev
+$ edp build -f --satage=iconfont
 $ edp build -f
 ```
 
@@ -21,11 +22,21 @@ $ edp build -f
 
 ```
 var IconProcessor = require('edp-build-iconfont');
-var iconProcessor = new IconProcessor({
-    files: 'src/svg/*.svg',         // svg 文件
-    fontName: 'icon-food',          // 字体名
-    dest: 'asset/font'              // 目标路径
-});
+
+exports.getProcessors = function () {
+
+    var iconProcessor = new IconProcessor({
+        files: 'src/svg/*.svg',         // svg 文件
+        fontName: 'icon-food',          // 字体名
+        dest: 'src/font'                // 目标路径
+    });
+
+    return {
+        'iconfont': [ iconProcessor ],
+        'default': [ ... ]
+    };
+
+};
 ```
 
 ## Showcase

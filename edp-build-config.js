@@ -18,14 +18,15 @@ exports.getProcessors = function () {
     var iconProcessor = new IconProcessor({
         files: 'src/svg/*.svg',
         fontName: 'icon-food',
-        dest: 'asset/font'
+        dest: 'src/font'
     });
 
     return {
-        'default': [ lessProcessor, moduleProcessor, pathMapperProcessor, iconProcessor ],
+        'iconfont': [ iconProcessor ],
+        'default': [ lessProcessor, moduleProcessor, pathMapperProcessor ],
         'release': [
             lessProcessor, cssProcessor, moduleProcessor,
-            jsProcessor, pathMapperProcessor, addCopyright, iconProcessor
+            jsProcessor, pathMapperProcessor, addCopyright
         ]
     };
 };
