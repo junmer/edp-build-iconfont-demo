@@ -1,4 +1,4 @@
-# edp-build iconfont
+# edp-build iconfont demo
 
 > edp build iconfont from svgs
 
@@ -15,7 +15,6 @@ $ git clone https://github.com/junmer/edp-build-iconfont-demo
 $ cd edp-build-iconfont-demo
 $ npm install edp-build-iconfont --save-dev
 $ edp build -f --stage=iconfont
-$ edp build -f
 ```
 
 ## Config
@@ -44,7 +43,7 @@ exports.getProcessors = function () {
 $ edp webserver start
 ```
 
-打开 `http://127.0.01:8848/output/` 看效果
+打开 `http://127.0.01:8848/` 看效果
 
 ![showcase](screenshot/showcase.png)
 
