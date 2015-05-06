@@ -14,7 +14,7 @@ $ npm install -g edp
 $ git clone https://github.com/junmer/edp-build-iconfont-demo
 $ cd edp-build-iconfont-demo
 $ npm install edp-build-iconfont --save-dev
-$ edp build -f --satage=iconfont
+$ edp build -f --stage=iconfont
 $ edp build -f
 ```
 
@@ -32,8 +32,7 @@ exports.getProcessors = function () {
     });
 
     return {
-        'iconfont': [ iconProcessor ],
-        'default': [ ... ]
+        'iconfont': [iconProcessor]
     };
 
 };
