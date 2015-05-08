@@ -8,7 +8,7 @@
 $ npm install -g edp
 ```
 
-## Useage
+## Usage
 
 ```
 $ git clone https://github.com/junmer/edp-build-iconfont-demo
