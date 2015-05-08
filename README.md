@@ -51,6 +51,6 @@ $ edp webserver start
 
 - [edp](https://github.com/ecomfe/edp)
 - [fontmin](https://github.com/ecomfe/fontmin)
-- [edp-build-iconfont](https://github.com/junmer/edp-build-iconfont)
+- [edp-build-iconfont](https://github.com/ecomfe/edp-build-iconfont)
 - [fonteditor](https://github.com/ecomfe/fonteditor)
 
