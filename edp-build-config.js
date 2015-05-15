@@ -18,7 +18,17 @@ exports.getProcessors = function () {
     var iconProcessor = new IconProcessor({
         files: 'src/svg/*.svg',
         fontName: 'icon-food',
-        dest: 'src/font'
+        dest: 'src/font',
+        fmOptions: {                    // fontmin 配置
+            adjust: {                   // 校正信息
+                leftSideBearing: 0,     // 左支撑 或 左边距
+                rightSideBearing: 0,    // 右支撑 或 右边距
+                ajdustToEmBox: true,    // 调整上下边界到 em 框
+                ajdustToEmPadding: 0    // 调整上下边界到 em 框留白
+                                        // embox 默认 1024
+            },
+            startCode: 0xe001           // 字符 起始 unicode 编码
+        }
     });
 
     return {
